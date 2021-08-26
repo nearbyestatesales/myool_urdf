@@ -8,7 +8,7 @@
     name="myool_chassis">
     <inertial>
       <origin
-        xyz="-0.0025949 1.6653E-16 0.003175"
+        xyz="-0.0025949 0 0.003175"
         rpy="0 0 0" />
       <mass
         value="2.8701" />
@@ -25,7 +25,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <box size="0.42 0.41 0.08" />
+        <box size="0.42 0.345 0.007" />
       </geometry>
       <material
         name="">
@@ -38,7 +38,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <box size="0.42 0.41 0.08" />
+        <box size="0.42 0.345 0.08" />
       </geometry>
     </collision>
   </link>
