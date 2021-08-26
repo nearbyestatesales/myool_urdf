@@ -76,7 +76,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <cylinder length="0.0435" radius="0.85"/>
+        <cylinder length="0.0435" radius="0.085"/>
       </geometry>
     </collision>
   </link>
