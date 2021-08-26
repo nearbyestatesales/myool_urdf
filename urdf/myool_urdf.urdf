@@ -8,17 +8,17 @@
     name="myool_chassis">
     <inertial>
       <origin
-        xyz="0 0 0"
+        xyz="-0.0025949 1.6653E-16 0.003175"
         rpy="0 0 0" />
       <mass
         value="2.8701" />
       <inertia
-        ixx="0"
-        ixy="0"
-        ixz="0"
-        iyy="0"
-        iyz="0"
-        izz="0" />
+        ixx="0.019918"
+        ixy="5.8875E-18"
+        ixz="-8.948E-19"
+        iyy="0.042638"
+        iyz="2.3451E-19"
+        izz="0.061874" />
     </inertial>
     <visual>
       <origin
@@ -31,7 +31,7 @@
       <material
         name="">
         <color
-          rgba="0.75294 0 0 1" />
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
