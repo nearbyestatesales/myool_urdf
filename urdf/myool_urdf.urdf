@@ -5,13 +5,13 @@
 <robot
   name="myool_urdf">
   <link
-    name="myool_chassis">
+    name="myool_battery">
     <inertial>
       <origin
         xyz="0 0 0"
         rpy="0 0 0" />
       <mass
-        value="2.8701" />
+        value="0" />
       <inertia
         ixx="0"
         ixy="0"
@@ -26,12 +26,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://myool_urdf/meshes/myool_chassis.STL" />
+          filename="package://myool_urdf/meshes/myool_battery.STL" />
       </geometry>
       <material
         name="">
         <color
-          rgba="0.75294 0 0 1" />
+          rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -40,8 +40,21 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://myool_urdf/meshes/myool_chassis.STL" />
+          filename="package://myool_urdf/meshes/myool_battery.STL" />
       </geometry>
     </collision>
   </link>
+  <joint
+    name="myool_battery_joint"
+    type="fixed">
+    <origin
+      xyz="0.097493 0.025146 0.00635"
+      rpy="0 0 0" />
+    <parent
+      link="myool_chassis" />
+    <child
+      link="myool_battery" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
 </robot>
