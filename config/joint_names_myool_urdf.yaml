@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'myool_front_right_joint', 'myool_front_left_joint', 'myool_rear_right_joint', 'myool_rear_right_rocker_rear_joint', 'myool_rear_right_rocker_center_joint', 'myool_rear_left_joint', 'myool_rear_left_rocker_rear_joint', 'myool_rear_left_rocker_center_joint', ]
