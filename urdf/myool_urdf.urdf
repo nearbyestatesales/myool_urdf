@@ -6,6 +6,13 @@
   name="myool_urdf">
   <link
     name="myool_chassis">
+    <inertial>
+      <origin
+        xyz="-0.0025949 1.6653E-16 0.003175"
+        rpy="0 0 0" />
+      <mass
+        value="2.8701" />
+    </inertial>
     <visual>
       <origin
         xyz="0 0 0"
