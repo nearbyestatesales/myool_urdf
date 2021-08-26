@@ -61,7 +61,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="90 0 0" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
       </geometry>
@@ -74,7 +74,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="90 0 0" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
       </geometry>
@@ -85,7 +85,7 @@
     type="continuous">
     <origin
       xyz="0.14829 -0.21561 0.003175"
-      rpy="90 0 0" />
+      rpy="0 0 0" />
     <parent
       link="myool_chassis" />
     <child
@@ -112,7 +112,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="90 0 0" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
       </geometry>
@@ -125,7 +125,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="90 0 0" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
       </geometry>
@@ -136,7 +136,7 @@
     type="continuous">
     <origin
       xyz="0.14829 0.21561 0.003175"
-      rpy="90 0 0" />
+      rpy="0 0 0" />
     <parent
       link="myool_chassis" />
     <child
