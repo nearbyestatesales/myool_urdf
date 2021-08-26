@@ -93,4 +93,55 @@
     <axis
       xyz="0 1 0" />
   </joint>
+   <link
+    name="myool_front_left_wheel">
+    <inertial>
+      <origin
+        xyz="-1.1102E-16 0.021778 9.7145E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.84556" />
+      <inertia
+        ixx="0.001557"
+        ixy="1.0003E-18"
+        ixz="-3.8952E-11"
+        iyy="0.0028888"
+        iyz="-2.8717E-09"
+        izz="0.001557" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.0435" radius="0.085"/>
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.0435" radius="0.085"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="myool_front_left_joint"
+    type="continuous">
+    <origin
+      xyz="0.14829 0.21561 0.003175"
+      rpy="90 0 0" />
+    <parent
+      link="myool_chassis" />
+    <child
+      link="myool_front_left_wheel" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
 </robot>
