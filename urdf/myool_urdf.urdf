@@ -46,7 +46,7 @@
     name="myool_front_right_wheel">
     <inertial>
       <origin
-        xyz="0 -0.021778 0"
+        xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
         value="0.84556" />
@@ -60,7 +60,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 -0.021778 0"
+        xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
@@ -73,7 +73,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 -0.021778 0"
+        xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
@@ -97,7 +97,7 @@
     name="myool_front_left_wheel">
     <inertial>
       <origin
-        xyz="0 0.021778 0"
+        xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
         value="0.84556" />
@@ -111,7 +111,7 @@
 	</inertial>
     <visual>
       <origin
-        xyz="0 0.021778 0"
+        xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
@@ -124,7 +124,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0.021778 0"
+        xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <geometry>
         <cylinder length="0.0435" radius="0.085"/>
@@ -148,21 +148,21 @@
     name="myool_rear_right_rocker">
     <inertial>
       <origin
-        xyz="2.067E-17 -0.0031974 -1.9429E-16"
+        xyz="0 -0.0031974 0"
         rpy="0 0 0" />
       <mass
         value="0.32911" />
       <inertia
         ixx="0.00015526"
-        ixy="1.4694E-20"
-        ixz="-1.017E-19"
+        ixy="0"
+        ixz="0"
         iyy="0.0020318"
-        iyz="3.0888E-21"
+        iyz="0"
         izz="0.0018788" />
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.0031974 0"
         rpy="0 0 0" />
       <geometry>
         <box size="0.28 0.01 0.08" />
@@ -175,7 +175,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0"
+        xyz="0 -0.0031974 0"
         rpy="0 0 0" />
       <geometry>
         <box size="0.28 0.01 0.08" />
@@ -199,7 +199,7 @@
     name="myool_rear_right_rocker_rear_wheel">
     <inertial>
       <origin
-        xyz="-1.3878E-17 -0.021778 -6.9389E-18"
+        xyz="0 -0.021778 0"
         rpy="0 0 0" />
       <mass
         value="0.84556" />
