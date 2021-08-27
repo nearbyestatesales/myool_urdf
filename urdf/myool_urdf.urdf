@@ -6,9 +6,10 @@
   name="myool_urdf">
   <link
     name="myool_chassis">
+	<pose>0 0 0.08 0 0 0</pose>
     <inertial>
       <origin
-        xyz="0 0 0.08"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <mass
         value="2.8701" />
@@ -22,7 +23,7 @@
     </inertial>
     <visual>
       <origin
-        xyz="0 0 0.08"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <box size="0.42 0.345 0.007" />
@@ -35,7 +36,7 @@
     </visual>
     <collision>
       <origin
-        xyz="0 0 0.08"
+        xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
         <box size="0.42 0.345 0.007" />
