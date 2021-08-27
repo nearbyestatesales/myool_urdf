@@ -1,7 +1,7 @@
 <launch>
 <!-- overwriting these args -->
         <arg name="debug" default="false" />
-        <arg name="gui" default="true" />
+        <arg name="gui" default="false" />
         <arg name="pause" default="false" />
         <!-- <arg name="world" default="$(find myool_urdf)/world/empty_world.world" /> -->
 
