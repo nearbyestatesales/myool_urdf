@@ -4,6 +4,43 @@
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
   name="myool_urdf">
+  
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+  <material name="blue">
+    <color rgba="0.203125 0.23828125 0.28515625 1.0"/>
+  </material>
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+  <material name="grey">
+    <color rgba="0.2 0.2 0.2 1.0"/>
+  </material>
+  <material name="orange">
+    <color rgba="1.0 0.423529411765 0.0392156862745 1.0"/>
+  </material>
+  <material name="brown">
+    <color rgba="0.870588235294 0.811764705882 0.764705882353 1.0"/>
+  </material>
+  <material name="red">
+    <color rgba="0.80078125 0.12890625 0.1328125 1.0"/>
+  </material>
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+  
+  <gazebo reference="myool_chassis">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+  <gazebo reference="myool_front_right_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  <gazebo reference="myool_front_left_wheel">
+    <material>Gazebo/Blue</material>
+  </gazebo>  
+  
+  
   <link
     name="myool_chassis">
 	<pose>0 0 0.08 0 0 0</pose>
@@ -91,6 +128,8 @@
       link="myool_front_right_wheel" />
     <axis
       xyz="0 1 0" />
+	<limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
   </joint>
    <link
     name="myool_front_left_wheel">
@@ -141,7 +180,9 @@
     <child
       link="myool_front_left_wheel" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
+	<limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>  
   </joint>
    <link
     name="myool_rear_right_rocker">
@@ -244,6 +285,8 @@
       link="myool_rear_right_rocker_rear_wheel" />
     <axis
       xyz="0 1 0" />
+	<limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>
   </joint> 
     <link
     name="myool_rear_right_rocker_center_wheel">
@@ -295,6 +338,8 @@
       link="myool_rear_right_rocker_center_wheel" />
     <axis
       xyz="0 1 0" />
+	<limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>  
   </joint>
   <link
     name="myool_rear_left_rocker">
@@ -396,7 +441,9 @@
     <child
       link="myool_rear_left_rocker_rear_wheel" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
+	<limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>  
   </joint>
   <link
     name="myool_rear_left_rocker_center_wheel">
@@ -447,7 +494,9 @@
     <child
       link="myool_rear_left_rocker_center_wheel" />
     <axis
-      xyz="0 -1 0" />
+      xyz="0 1 0" />
+	<limit effort="10000" velocity="1000"/>
+    <joint_properties damping="1.0" friction="1.0"/>  
   </joint>
   <link
     name="myool_battery">
