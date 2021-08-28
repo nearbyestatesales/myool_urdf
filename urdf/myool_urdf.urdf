@@ -34,12 +34,26 @@
     <material>Gazebo/Orange</material>
   </gazebo>
   <gazebo reference="myool_front_right_wheel">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Black</material>
   </gazebo>
   <gazebo reference="myool_front_left_wheel">
-    <material>Gazebo/Blue</material>
+    <material>Gazebo/Black</material>
   </gazebo>  
-  
+  <gazebo reference="myool_rear_right_rocker_rear_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>  
+  <gazebo reference="myool_rear_right_rocker_center_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>  
+  <gazebo reference="myool_rear_left_rocker_rear_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>  
+  <gazebo reference="myool_rear_left_rocker_center_wheel">
+    <material>Gazebo/Black</material>
+  </gazebo>  
+  <gazebo reference="myool_battery">
+    <material>Gazebo/Blue</material>
+  </gazebo>    
   
   <link
     name="myool_chassis">
