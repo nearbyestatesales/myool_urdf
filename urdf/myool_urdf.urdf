@@ -29,9 +29,7 @@
         <box size="0.42 0.345 0.007" />
       </geometry>
       <material
-        name="">
-        <color
-          rgba="0.75294 0.75294 0.75294 1" />
+        name="blue">
       </material>
     </visual>
     <collision>
