@@ -85,7 +85,7 @@
     name="myool_front_right_joint"
     type="continuous">
     <origin
-      xyz="0.14829 -0.21561 0.003175"
+      xyz="0.14829 -0.23736 0.003175"
       rpy="0 0 0" />
     <parent
       link="myool_chassis" />
@@ -136,7 +136,7 @@
     name="myool_front_left_joint"
     type="continuous">
     <origin
-      xyz="0.14829 0.21561 0.003175"
+      xyz="0.14829 0.23736 0.003175"
       rpy="0 0 0" />
     <parent
       link="myool_chassis" />
