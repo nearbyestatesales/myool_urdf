@@ -84,8 +84,8 @@
     <rightFrontJoint>myool_front_right_joint</rightFrontJoint>
     <leftRearJoint>myool_rear_left_rocker_center_joint</leftRearJoint>
     <rightRearJoint>myool_rear_right_rocker_center_joint</rightRearJoint>
-	<leftRearJoint>myool_rear_left_rocker_rear_joint</leftRearJoint>
-    <rightRearJoint>myool_rear_right_rocker_rear_joint</rightRearJoint>
+	<!-- <leftRearJoint>myool_rear_left_rocker_rear_joint</leftRearJoint> -->
+    <!-- <rightRearJoint>myool_rear_right_rocker_rear_joint</rightRearJoint> -->
     <wheelSeparation>0.47472</wheelSeparation>
     <wheelDiameter>0.170</wheelDiameter>
     <robotBaseFrame>myool_chassis</robotBaseFrame>
