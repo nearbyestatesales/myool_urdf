@@ -20,7 +20,6 @@
     args="pub /calibrated std_msgs/Bool true" />
 </launch> -->
 
-<?xml version="1.0" encoding="UTF-8"?>
 <launch>
 
 
