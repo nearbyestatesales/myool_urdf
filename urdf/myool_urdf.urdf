@@ -424,7 +424,7 @@
   </link>
   <joint
     name="myool_rear_left_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.15651 0.20097 0.003175"
       rpy="0 0 0" />
