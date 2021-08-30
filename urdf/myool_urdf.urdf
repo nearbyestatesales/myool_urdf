@@ -75,7 +75,7 @@
       <robotBaseFrame>myool_chassis</robotBaseFrame>
     </plugin>
   </gazebo>
-
+-->
 <gazebo>
   <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
     <updateRate>20</updateRate>
@@ -94,7 +94,7 @@
     <broadcastTF>false</broadcastTF>
   </plugin>
 </gazebo>
--->  
+  
   <link
     name="myool_chassis">
 	<pose>0 0 0.08 0 0 0</pose>
