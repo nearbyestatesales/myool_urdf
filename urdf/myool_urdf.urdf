@@ -61,10 +61,10 @@
       <alwaysOn>true</alwaysOn>
       <updateRate>20</updateRate>
       <leftJoint>myool_rear_left_rocker_center_joint</leftJoint>
-	  <leftJoint>myool_front_left_joint</leftJoint>
-	  <leftJoint>myool_rear_left_rocker_rear_joint</leftJoint>
-      <rightJoint>myool_rear_right_rocker_rear_joint</rightJoint>
-	  <rightJoint>myool_front_right_joint</rightJoint>
+	  <!-- <leftJoint>myool_front_left_joint</leftJoint> -->
+	  <!-- <leftJoint>myool_rear_left_rocker_rear_joint</leftJoint> -->
+      <!-- <rightJoint>myool_rear_right_rocker_rear_joint</rightJoint> -->
+	  <!-- <rightJoint>myool_front_right_joint</rightJoint> -->
 	  <rightJoint>myool_rear_right_rocker_center_joint</rightJoint>
       <wheelSeparation>0.47472</wheelSeparation>
       <wheelDiameter>0.170</wheelDiameter>
