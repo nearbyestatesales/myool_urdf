@@ -5,17 +5,17 @@ joint_state_controller:
  
 velocity_controller:
     type        : "diff_drive_controller/DiffDriveController"
-    left_wheel  : 'myool_front_left_joint'
-    right_wheel : 'myool_front_right_joint'
-    publish_rate: 50              # default: 50
+    left_wheel  : ['myool_front_left_joint','myool_rear_left_rocker_center_joint','myool_rear_left_rocker_rear_joint']
+    right_wheel : ['myool_front_right_joint','myool_rear_right_rocker_center_joint','myool_rear_right_rocker_rear_joint']
+    publish_rate: 20              # default: 50
     pose_covariance_diagonal : [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
     twist_covariance_diagonal: [0.001, 0.001, 1000000.0, 1000000.0, 1000000.0, 1000.0]
 
     # Wheel separation and diameter. These are both optional.
     # diff_drive_controller will attempt to read either one or both from the
     # URDF if not specified as a parameter
-    wheel_separation : 0.28
-    wheel_radius : 0.04688
+    wheel_separation : 0.42
+    wheel_radius : 0.085
 
 
     enable_odom_tf : true
@@ -30,7 +30,7 @@ velocity_controller:
     cmd_vel_timeout: 0.25
 
     # Base frame_id
-    base_frame_id: base_footprint #default: base_link
+    base_frame_id: myool_chassis #default: base_link
 
     # Velocity and acceleration limits
     # Whenever a min_* is unspecified, default to -max_*

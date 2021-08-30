@@ -55,7 +55,8 @@
     <material>Gazebo/Blue</material>
   </gazebo>    
   <gazebo>
-    <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
+<!--    
+	<plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
       <legacyMode>false</legacyMode>
       <alwaysOn>true</alwaysOn>
       <updateRate>20</updateRate>
@@ -75,7 +76,7 @@
     </plugin>
   </gazebo>
   
-<!--
+
 <gazebo>
   <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
     <updateRate>20</updateRate>
