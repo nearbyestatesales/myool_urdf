@@ -75,15 +75,15 @@
       <robotBaseFrame>myool_chassis</robotBaseFrame>
     </plugin>
   </gazebo>
---> 
+
 <gazebo>
   <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
     <updateRate>20</updateRate>
     <robotNamespace>/</robotNamespace>
     <leftFrontJoint>myool_front_left_joint</leftFrontJoint>
     <rightFrontJoint>myool_front_right_joint</rightFrontJoint>
-    <!-- <leftRearJoint>myool_rear_left_rocker_center_joint</leftRearJoint> -->
-    <!-- <rightRearJoint>myool_rear_right_rocker_center_joint</rightRearJoint> -->
+    <leftRearJoint>myool_rear_left_rocker_center_joint</leftRearJoint>
+    <rightRearJoint>myool_rear_right_rocker_center_joint</rightRearJoint>
 	<leftRearJoint>myool_rear_left_rocker_rear_joint</leftRearJoint>
     <rightRearJoint>myool_rear_right_rocker_rear_joint</rightRearJoint>
     <wheelSeparation>0.47472</wheelSeparation>
@@ -94,7 +94,7 @@
     <broadcastTF>false</broadcastTF>
   </plugin>
 </gazebo>
- 
+-->  
   <link
     name="myool_chassis">
 	<pose>0 0 0.08 0 0 0</pose>
@@ -239,7 +239,7 @@
     <inertial>
       <origin
         xyz="0 0 0"
-        rpy="0 0.523 0" />
+        rpy="0 0 0" />
       <mass
         value="0.32911" />
       <inertia
@@ -253,7 +253,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0.523 0" />
+        rpy="0 0 0" />
       <geometry>
         <box size="0.28 0.01 0.08" />
       </geometry>
@@ -264,7 +264,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0.523 0" />
+        rpy="0 0 0" />
       <geometry>
         <box size="0.28 0.01 0.08" />
       </geometry>
@@ -424,10 +424,11 @@
   </link>
   <joint
     name="myool_rear_left_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.15651 0.20097 0.003175"
       rpy="0 0 0" />
+	<limit upper="0.523" />
     <parent
       link="myool_chassis" />
     <child
