@@ -54,7 +54,7 @@
   <gazebo reference="myool_battery">
     <material>Gazebo/Blue</material>
   </gazebo>    
-<!--
+
   <gazebo>
     <plugin filename="libgazebo_ros_diff_drive.so" name="differential_drive_controller">
       <legacyMode>false</legacyMode>
@@ -68,14 +68,14 @@
 	  <rightJoint>myool_rear_right_rocker_center_joint</rightJoint>
       <wheelSeparation>0.47472</wheelSeparation>
       <wheelDiameter>0.170</wheelDiameter>
-      <torque>5.0</torque>
+      <torque>3.0</torque>
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>myool_chassis</robotBaseFrame>
     </plugin>
   </gazebo>
---> 
+<!-- 
 <gazebo>
   <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
     <updateRate>20</updateRate>
@@ -87,12 +87,12 @@
     <wheelSeparation>0.47472</wheelSeparation>
     <wheelDiameter>0.170</wheelDiameter>
     <robotBaseFrame>myool_chassis</robotBaseFrame>
-    <torque>5</torque>
+    <torque>2</torque>
     <topicName>cmd_vel</topicName>
     <broadcastTF>false</broadcastTF>
   </plugin>
 </gazebo>
- 
+--> 
   <link
     name="myool_chassis">
 	<pose>0 0 0.08 0 0 0</pose>
@@ -137,7 +137,7 @@
         xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
-        value="3" />
+        value="2.2" />
       <inertia
         ixx="0.005892"
         ixy="0"
@@ -188,7 +188,7 @@
         xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
-        value="3" />
+        value="2.2" />
       <inertia
         ixx="0.005892"
         ixy="0"
@@ -288,7 +288,7 @@
         xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
-        value="3" />
+        value="2.2" />
       <inertia
         ixx="0.005892"
         ixy="0"
@@ -339,7 +339,7 @@
         xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
-        value="3" />
+        value="2.2" />
       <inertia
         ixx="0.005892"
         ixy="0"
@@ -439,7 +439,7 @@
         xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
-        value="3" />
+        value="2.2" />
       <inertia
         ixx="0.005892"
         ixy="0"
@@ -490,7 +490,7 @@
         xyz="0 0 0"
         rpy="0 1.5707 1.5707" />
       <mass
-        value="3" />
+        value="2.2" />
       <inertia
         ixx="0.005892"
         ixy="0"
