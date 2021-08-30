@@ -428,7 +428,6 @@
     <origin
       xyz="-0.15651 0.20097 0.003175"
       rpy="0 0 0" />
-	<limit upper="0.523" />
     <parent
       link="myool_chassis" />
     <child

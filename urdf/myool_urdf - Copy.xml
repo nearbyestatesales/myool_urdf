@@ -272,11 +272,10 @@
   </link>
   <joint
     name="myool_rear_right_joint"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="-0.15651 -0.20097 0.003175"
       rpy="0 0 0" />
-	<limit upper="0.523" />
     <parent
       link="myool_chassis" />
     <child
@@ -425,7 +424,7 @@
   </link>
   <joint
     name="myool_rear_left_joint"
-    type="revolute">
+    type="continuous">
     <origin
       xyz="-0.15651 0.20097 0.003175"
       rpy="0 0 0" />
