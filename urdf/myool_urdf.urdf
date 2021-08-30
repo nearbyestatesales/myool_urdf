@@ -272,7 +272,7 @@
   </link>
   <joint
     name="myool_rear_right_joint"
-    type="continuous">
+    type="revolute">
     <origin
       xyz="-0.15651 -0.20097 0.003175"
       rpy="0 0 0" />
@@ -282,7 +282,7 @@
       link="myool_rear_right_rocker" />
     <axis
       xyz="0 1 0" />
-	  <limit effort="10000" velocity="1000"/>
+	  <limit effort="10000" velocity="1000" upper="0.523/>
   </joint>
   <link
     name="myool_rear_right_rocker_rear_wheel">
