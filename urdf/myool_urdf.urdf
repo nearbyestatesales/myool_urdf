@@ -97,6 +97,12 @@
   </plugin>
 </gazebo>
 -->
+
+<gazebo>
+    
+	<plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
+    </plugin>
+  </gazebo>
   
   <link
     name="myool_chassis">
