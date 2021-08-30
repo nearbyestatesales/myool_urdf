@@ -239,7 +239,7 @@
     <inertial>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0.523 0" />
       <mass
         value="0.32911" />
       <inertia
@@ -253,7 +253,7 @@
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0.523 0" />
       <geometry>
         <box size="0.28 0.01 0.08" />
       </geometry>
@@ -264,7 +264,7 @@
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0.523 0" />
       <geometry>
         <box size="0.28 0.01 0.08" />
       </geometry>
