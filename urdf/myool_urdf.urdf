@@ -283,6 +283,7 @@
       link="myool_rear_right_rocker" />
     <axis
       xyz="0 1 0" />
+	  <limit effort="10000" velocity="1000"/>
   </joint>
   <link
     name="myool_rear_right_rocker_rear_wheel">
@@ -435,6 +436,7 @@
       link="myool_rear_left_rocker" />
     <axis
       xyz="0 1 0" />
+	  <limit effort="10000" velocity="1000"/>
   </joint>
   <link
     name="myool_rear_left_rocker_rear_wheel">
