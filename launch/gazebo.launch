@@ -51,7 +51,7 @@
     <group ns="$(arg robot_namespace)">
 
 
-        <param name="robot_description" command="cat '$(find myool_urdf)/urdf/myool_urdf.urdf -urdf -model myool_urdf'" />
+        <param name="robot_description" command="cat '$(find myool_urdf)/urdf/myool_urdf.urdf'" />
 
         <node name="ds_spawn" pkg="gazebo_ros" type="spawn_model" output="screen" args="  -z 0.0 
                         -urdf 
