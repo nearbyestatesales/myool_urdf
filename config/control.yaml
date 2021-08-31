@@ -53,30 +53,30 @@ velocity_controller:
         has_jerk_limits        : true
         max_jerk               : 2.5  # rad/s^3
         
-        
+ 
 /gazebo_ros_control:
-    pid_gains:
+  pid_gains:
       myool_front_left_joint:
-        p: 100.0
-        i: 0.01
-        d: 10.0
+          p: 1.0
+          i: 1.0
+          d: 1.0
       myool_rear_left_rocker_center_joint:
-        p: 100.0
-        i: 0.01
-        d: 10.0
+          p: 1.0
+          i: 1.0
+          d: 1.0
       myool_rear_left_rocker_rear_joint:
-        p: 100.0
-        i: 0.01
-        d: 10.0
+          p: 1.0
+          i: 1.0
+          d: 1.0
       myool_front_right_joint:
-        p: 100.0
-        i: 0.01
-        d: 10.0
+          p: 1.0
+          i: 1.0
+          d: 1.0
       myool_rear_right_rocker_center_joint:
-        p: 100.0
-        i: 0.01
-        d: 10.0
+          p: 1.0
+          i: 1.0
+          d: 1.0
       myool_rear_right_rocker_rear_joint:
-        p: 100.0
-        i: 0.01
-        d: 10.0
+          p: 1.0
+          i: 1.0
+          d: 1.0          
