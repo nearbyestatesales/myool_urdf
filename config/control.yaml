@@ -55,28 +55,28 @@ velocity_controller:
         
         
 /gazebo_ros_control:
-pid_gains:
-myool_front_left_joint:
-p: 100.0
-i: 0.01
-d: 10.0
-myool_rear_left_rocker_center_joint:
-p: 100.0
-i: 0.01
-d: 10.0
-myool_rear_left_rocker_rear_joint:
-p: 100.0
-i: 0.01
-d: 10.0
-myool_front_right_joint:
-p: 100.0
-i: 0.01
-d: 10.0
-myool_rear_right_rocker_center_joint:
-p: 100.0
-i: 0.01
-d: 10.0
-myool_rear_right_rocker_rear_joint:
-p: 100.0
-i: 0.01
-d: 10.0
+    pid_gains:
+      myool_front_left_joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+      myool_rear_left_rocker_center_joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+      myool_rear_left_rocker_rear_joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+      myool_front_right_joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+      myool_rear_right_rocker_center_joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
+      myool_rear_right_rocker_rear_joint:
+        p: 100.0
+        i: 0.01
+        d: 10.0
