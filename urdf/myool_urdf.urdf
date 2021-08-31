@@ -98,7 +98,7 @@
 </gazebo>
 -->
 
-<gazebo>
+  <gazebo>
     
 	<plugin filename="libgazebo_ros_control.so" name="gazebo_ros_control">
     </plugin>
@@ -598,4 +598,26 @@
     <axis
       xyz="0 0 0" />
   </joint>  
+  
+	<transmission name="left_wheel_transmission">
+	  <type>transmission_interface/SimpleTransmission</type>
+	  <joint name="myool_front_left_joint">
+		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+	  </joint>
+	  <actuator name="left_wheel_actuator">
+		<mechanicalReduction>7</mechanicalReduction>
+		<hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </actuator>
+	</transmission>
+
+	<transmission name="right_wheel_transmission">
+	  <type>transmission_interface/SimpleTransmission</type>
+	  <joint name="myool_front_right_joint">
+		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+	  </joint>
+	  <actuator name="right_wheel_actuator">
+		<mechanicalReduction>7</mechanicalReduction>
+		<hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </actuator>
+	</transmission>
 </robot>
