@@ -599,23 +599,67 @@
       xyz="0 0 0" />
   </joint>  
   
-	<transmission name="left_wheel_transmission">
+	<transmission name="myool_front_left_transmission">
 	  <type>transmission_interface/SimpleTransmission</type>
 	  <joint name="myool_front_left_joint">
 		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
 	  </joint>
-	  <actuator name="left_wheel_actuator">
+	  <actuator name="myool_front_left_actuator">
 		<mechanicalReduction>7</mechanicalReduction>
 		<hardwareInterface>VelocityJointInterface</hardwareInterface>
 	  </actuator>
 	</transmission>
 
-	<transmission name="right_wheel_transmission">
+	<transmission name="myool_front_right_transmission">
 	  <type>transmission_interface/SimpleTransmission</type>
 	  <joint name="myool_front_right_joint">
 		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
 	  </joint>
-	  <actuator name="right_wheel_actuator">
+	  <actuator name="myool_front_right_actuator">
+		<mechanicalReduction>7</mechanicalReduction>
+		<hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </actuator>
+	</transmission>
+	
+	<transmission name="myool_rear_left_rocker_center_transmission">
+	  <type>transmission_interface/SimpleTransmission</type>
+	  <joint name="myool_rear_left_rocker_center_joint">
+		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+	  </joint>
+	  <actuator name="myool_rear_left_rocker_center_actuator">
+		<mechanicalReduction>7</mechanicalReduction>
+		<hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </actuator>
+	</transmission>
+
+	<transmission name="myool_rear_right_rocker_center_transmission">
+	  <type>transmission_interface/SimpleTransmission</type>
+	  <joint name="myool_rear_right_rocker_center_joint">
+		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+	  </joint>
+	  <actuator name="myool_rear_right_rocker_center_actuator">
+		<mechanicalReduction>7</mechanicalReduction>
+		<hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </actuator>
+	</transmission>
+	
+	<transmission name="myool_rear_left_rocker_rear_transmission">
+	  <type>transmission_interface/SimpleTransmission</type>
+	  <joint name="myool_rear_left_rocker_rear_joint">
+		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+	  </joint>
+	  <actuator name="myool_rear_left_rocker_rear_actuator">
+		<mechanicalReduction>7</mechanicalReduction>
+		<hardwareInterface>VelocityJointInterface</hardwareInterface>
+	  </actuator>
+	</transmission>
+
+	<transmission name="myool_rear_right_rocker_rear_transmission">
+	  <type>transmission_interface/SimpleTransmission</type>
+	  <joint name="myool_rear_right_rocker_rear_joint">
+		<hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>  
+	  </joint>
+	  <actuator name="myool_rear_right_rocker_rear_actuator">
 		<mechanicalReduction>7</mechanicalReduction>
 		<hardwareInterface>VelocityJointInterface</hardwareInterface>
 	  </actuator>
