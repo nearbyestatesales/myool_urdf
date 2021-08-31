@@ -1,6 +1,6 @@
 joint_state_controller:
   type: joint_state_controller/JointStateController
-  publish_rate: 50
+  publish_rate: 20
 
  
 velocity_controller:
@@ -52,3 +52,31 @@ velocity_controller:
         max_acceleration       : 0.5  # rad/s^2
         has_jerk_limits        : true
         max_jerk               : 2.5  # rad/s^3
+        
+        
+/gazebo_ros_control:
+pid_gains:
+myool_front_left_joint:
+p: 100.0
+i: 0.01
+d: 10.0
+myool_rear_left_rocker_center_joint:
+p: 100.0
+i: 0.01
+d: 10.0
+myool_rear_left_rocker_rear_joint:
+p: 100.0
+i: 0.01
+d: 10.0
+myool_front_right_joint:
+p: 100.0
+i: 0.01
+d: 10.0
+myool_rear_right_rocker_center_joint:
+p: 100.0
+i: 0.01
+d: 10.0
+myool_rear_right_rocker_rear_joint:
+p: 100.0
+i: 0.01
+d: 10.0
