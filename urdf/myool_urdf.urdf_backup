@@ -30,7 +30,7 @@
     <color rgba="1.0 1.0 1.0 1.0"/>
   </material>
   
-  <gazebo reference="base_link">
+  <gazebo reference="myool_chassis">
     <material>Gazebo/Orange</material>
   </gazebo>
   <gazebo reference="myool_front_right_wheel">
@@ -73,7 +73,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <robotBaseFrame>base_link</robotBaseFrame>
+      <robotBaseFrame>myool_chassis</robotBaseFrame>
     </plugin>
   </gazebo>
   
@@ -90,7 +90,7 @@
     <rightRearJoint>myool_rear_right_rocker_rear_joint</rightRearJoint>
     <wheelSeparation>0.47472</wheelSeparation>
     <wheelDiameter>0.170</wheelDiameter>
-    <robotBaseFrame>base_link</robotBaseFrame>
+    <robotBaseFrame>myool_chassis</robotBaseFrame>
     <torque>2</torque>
     <topicName>cmd_vel</topicName>
     <broadcastTF>false</broadcastTF>
@@ -105,7 +105,7 @@
   </gazebo>
   
   <link
-    name="base_link">
+    name="myool_chassis">
 	<pose>0 0 0.08 0 0 0</pose>
     <inertial>
       <origin
@@ -184,7 +184,7 @@
       xyz="0.14829 -0.23736 0.003175"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_chassis" />
     <child
       link="myool_front_right_wheel" />
     <axis
@@ -235,7 +235,7 @@
       xyz="0.14829 0.23736 0.003175"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_chassis" />
     <child
       link="myool_front_left_wheel" />
     <axis
@@ -286,7 +286,7 @@
       xyz="-0.15651 -0.20097 0.003175"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_chassis" />
     <child
       link="myool_rear_right_rocker" />
     <axis
@@ -337,7 +337,7 @@
       xyz="-0.1016 -0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_rear_right_rocker" />
     <child
       link="myool_rear_right_rocker_rear_wheel" />
     <axis
@@ -385,10 +385,10 @@
     name="myool_rear_right_rocker_center_joint"
     type="continuous">
     <origin
-      xyz="-0.25811 -0.23737 0.003175"
+      xyz="0.1016 -0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_rear_right_rocker" />
     <child
       link="myool_rear_right_rocker_center_wheel" />
     <axis
@@ -439,7 +439,7 @@
       xyz="-0.15651 0.20097 0.003175"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_chassis" />
     <child
       link="myool_rear_left_rocker" />
     <axis
@@ -490,7 +490,7 @@
       xyz="-0.1016 0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_rear_left_rocker" />
     <child
       link="myool_rear_left_rocker_rear_wheel" />
     <axis
@@ -538,10 +538,10 @@
     name="myool_rear_left_rocker_center_joint"
     type="continuous">
     <origin
-      xyz="0.25811 0.23737 0.003175"
+      xyz="0.1016 0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_rear_left_rocker" />
     <child
       link="myool_rear_left_rocker_center_wheel" />
     <axis
@@ -592,7 +592,7 @@
       xyz="0 0 0.0375"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_chassis" />
     <child
       link="myool_battery" />
     <axis
