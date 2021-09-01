@@ -334,7 +334,7 @@
     name="myool_rear_right_rocker_rear_joint"
     type="continuous">
     <origin
-      xyz="-0.25811 -0.23736 0.003175"
+      xyz="-0.1016 -0.0364 0"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -385,7 +385,7 @@
     name="myool_rear_right_rocker_center_joint"
     type="continuous">
     <origin
-      xyz="-0.05491 -0.23736 0.003175"
+      xyz="0.1016 -0.0364 0"
       rpy="0 0 0" />
     <parent
       link="base_link" />
@@ -487,10 +487,10 @@
     name="myool_rear_left_rocker_rear_joint"
     type="continuous">
     <origin
-      xyz="-0.25811 0.23736 0.003175"
+      xyz="-0.1016 0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_rear_left_rocker" />
     <child
       link="myool_rear_left_rocker_rear_wheel" />
     <axis
@@ -538,10 +538,10 @@
     name="myool_rear_left_rocker_center_joint"
     type="continuous">
     <origin
-      xyz="-0.05491 0.23736 0.003175"
+      xyz="0.1016 0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="base_link" />
+      link="myool_rear_left_rocker" />
     <child
       link="myool_rear_left_rocker_center_wheel" />
     <axis
