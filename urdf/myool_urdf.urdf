@@ -337,7 +337,7 @@
       xyz="-0.1016 -0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="myool_rear_right_rocker" />
+      link="base_link" />
     <child
       link="myool_rear_right_rocker_rear_wheel" />
     <axis
@@ -388,7 +388,7 @@
       xyz="0.1016 -0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="myool_rear_right_rocker" />
+      link="base_link" />
     <child
       link="myool_rear_right_rocker_center_wheel" />
     <axis
@@ -490,7 +490,7 @@
       xyz="-0.1016 0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="myool_rear_left_rocker" />
+      link="base_link" />
     <child
       link="myool_rear_left_rocker_rear_wheel" />
     <axis
@@ -541,7 +541,7 @@
       xyz="0.1016 0.0364 0"
       rpy="0 0 0" />
     <parent
-      link="myool_rear_left_rocker" />
+      link="base_link" />
     <child
       link="myool_rear_left_rocker_center_wheel" />
     <axis
